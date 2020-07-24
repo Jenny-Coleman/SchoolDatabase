@@ -57,7 +57,6 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Delete");
-        setPreferredSize(new java.awt.Dimension(777, 650));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -67,13 +66,13 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("Delete");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
 
         jLabel2.setText("Name:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, -1, -1));
 
         jLabel3.setText("Surname:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, -1, -1));
 
         tblStudent.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -93,7 +92,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblStudent);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 139, 700, 106));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 139, 660, 106));
 
         tblParent.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -113,7 +112,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tblParent);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, 700, 106));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, 660, 106));
 
         btnReload.setText("Reload");
         btnReload.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +120,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
                 btnReloadActionPerformed(evt);
             }
         });
-        getContentPane().add(btnReload, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 107, -1));
+        getContentPane().add(btnReload, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 550, 107, -1));
 
         btnSDelete.setText("Delete Selected Student");
         btnSDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +128,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
                 btnSDeleteActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 509, 174, -1));
+        getContentPane().add(btnSDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, 174, -1));
 
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +136,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
                 btnBackActionPerformed(evt);
             }
         });
-        getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, 107, -1));
+        getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, 107, -1));
 
         btnPDelete.setText("Delete Selected Parent");
         btnPDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -145,7 +144,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
                 btnPDeleteActionPerformed(evt);
             }
         });
-        getContentPane().add(btnPDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 550, 174, -1));
+        getContentPane().add(btnPDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 550, 174, -1));
 
         tblTeacher.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -157,7 +156,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(tblTeacher);
 
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 387, 700, 104));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 387, 660, 104));
 
         btnTDelete.setText("Delete Selected Teacher");
         btnTDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +164,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
                 btnTDeleteActionPerformed(evt);
             }
         });
-        getContentPane().add(btnTDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 591, 174, -1));
+        getContentPane().add(btnTDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 590, 174, -1));
 
         btnSearch.setText("Search");
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
@@ -173,16 +172,16 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
                 btnSearchActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, 107, -1));
+        getContentPane().add(btnSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 510, 107, -1));
 
         edtName.setColumns(10);
-        getContentPane().add(edtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 100, -1));
+        getContentPane().add(edtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 100, -1));
 
         edtSname.setColumns(10);
-        getContentPane().add(edtSname, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 100, -1));
+        getContentPane().add(edtSname, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 100, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Used_chalk_board.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 640));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 640));
 
         pack();
         setLocationRelativeTo(null);
