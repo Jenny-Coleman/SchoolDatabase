@@ -182,7 +182,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
         getContentPane().add(edtSname, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 100, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Used_chalk_board.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 640));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 640));
 
         pack();
         setLocationRelativeTo(null);
@@ -400,16 +400,8 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPDeleteActionPerformed
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
-        String fname = "";
-        String fsname = "";
-        
-        if (!edtName.getText().equals("")){
-            fname = edtName.getText();
-        }
-        
-        if (!edtSname.getText().equals("")){
-            fsname = edtSname.getText();
-        }
+        String fname = edtName.getText();
+        String fsname = edtSname.getText();
         
         try {
             Main pro = new Main();
@@ -473,7 +465,7 @@ public class AdminDeleteFrm extends javax.swing.JFrame {
                 
                 String[] data = {id, name, sname, grade};
                 
-                Stm.addRow(data);
+                Ttm.addRow(data);
             }
             
             Main.con.close();
